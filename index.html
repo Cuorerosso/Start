@@ -1,0 +1,248 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2685.3">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="it"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;Il Mio Sito&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>* {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-sizing: border-box;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>body {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-family: Arial, Helvetica, sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>min-height: 100vh;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.container {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: white;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 40px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 20px 40px rgba(0,0,0,0.2);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>max-width: 500px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 90%;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 40px auto;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.flag {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-align: right;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.flag button {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: none;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: none;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 32px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 5px 10px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transition: transform 0.2s;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.flag button:hover {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transform: scale(1.1);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.buttons {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>flex-direction: column;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>gap: 15px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 30px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.btn, .btn-home {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: white;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: none;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 15px 30px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 18px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 50px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transition: transform 0.2s, box-shadow 0.2s;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-decoration: none;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: inline-block;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.btn:hover, .btn-home:hover {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transform: translateY(-3px);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 10px 20px rgba(0,0,0,0.2);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.btn-home {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: #ff6b6b;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 30px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.btn-home:hover {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: #ff4757;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>h1 {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #333;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>p {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #666;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>line-height: 1.6;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.page-content {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: none;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.page-content.active {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: block;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;!-- SCEGLI LA LINGUA --&gt;</p>
+<p class="p1">&lt;div class="container" id="app"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="flag"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;button onclick="toggleLanguage()" id="flagBtn"&gt;🇬🇧&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- HOME PAGE (visibile di default) --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div id="homePage"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h1 id="homeTitle"&gt;Benvenuto nel mio sito!&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p id="homeSubtitle"&gt;Clicca su un pulsante per esplorare&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="buttons"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;button class="btn" onclick="showPage(1)"&gt;📖 Pagina 1&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;button class="btn" onclick="showPage(2)"&gt;🎨 Pagina 2&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;button class="btn" onclick="showPage(3)"&gt;🎵 Pagina 3&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;button class="btn" onclick="showPage(4)"&gt;📞 Pagina 4&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- PAGINA 1 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div id="page1" class="page-content"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h1 id="page1Title"&gt;📖 Pagina 1&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p id="page1Text"&gt;Questo è il contenuto della prima pagina. Puoi scrivere qui quello che vuoi!&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;button class="btn-home" onclick="showHome()"&gt;🏠 Torna alla Home&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- PAGINA 2 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div id="page2" class="page-content"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h1 id="page2Title"&gt;🎨 Pagina 2&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p id="page2Text"&gt;Questo è il contenuto della seconda pagina. Personalizzala come preferisci!&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;button class="btn-home" onclick="showHome()"&gt;🏠 Torna alla Home&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- PAGINA 3 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div id="page3" class="page-content"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h1 id="page3Title"&gt;🎵 Pagina 3&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p id="page3Text"&gt;Questo è il contenuto della terza pagina. Aggiungi immagini, testo o quello che vuoi!&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;button class="btn-home" onclick="showHome()"&gt;🏠 Torna alla Home&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- PAGINA 4 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div id="page4" class="page-content"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h1 id="page4Title"&gt;📞 Pagina 4&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p id="page4Text"&gt;Questo è il contenuto della quarta pagina. Personalizzala con le tue informazioni!&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;button class="btn-home" onclick="showHome()"&gt;🏠 Torna alla Home&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>// TRADUZIONI</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const texts = {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>it: {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>homeTitle: "Benvenuto nel mio sito!",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>homeSubtitle: "Clicca su un pulsante per esplorare",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>page1Title: "📖 Pagina 1",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>page1Text: "Questo è il contenuto della prima pagina. Puoi scrivere qui quello che vuoi!",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>page2Title: "🎨 Pagina 2",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>page2Text: "Questo è il contenuto della seconda pagina. Personalizzala come preferisci!",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>page3Title: "🎵 Pagina 3",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>page3Text: "Questo è il contenuto della terza pagina. Aggiungi immagini, testo o quello che vuoi!",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>page4Title: "📞 Pagina 4",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>page4Text: "Questo è il contenuto della quarta pagina. Personalizzala con le tue informazioni!",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>homeBtn: "🏠 Torna alla Home"</p>
+<p class="p1"><span class="Apple-converted-space">        </span>},</p>
+<p class="p1"><span class="Apple-converted-space">        </span>en: {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>homeTitle: "Welcome to my site!",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>homeSubtitle: "Click a button to explore",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>page1Title: "📖 Page 1",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>page1Text: "This is the content of the first page. You can write whatever you want here!",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>page2Title: "🎨 Page 2",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>page2Text: "This is the content of the second page. Customize it as you like!",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>page3Title: "🎵 Page 3",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>page3Text: "This is the content of the third page. Add images, text, or anything you want!",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>page4Title: "📞 Page 4",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>page4Text: "This is the content of the fourth page. Customize it with your information!",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>homeBtn: "🏠 Back to Home"</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>};</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>let currentLang = 'it';</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>function updateLanguage() {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const t = texts[currentLang];</p>
+<p class="p1"><span class="Apple-converted-space">        </span>document.getElementById('homeTitle').innerText = t.homeTitle;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>document.getElementById('homeSubtitle').innerText = t.homeSubtitle;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>document.getElementById('page1Title').innerText = t.page1Title;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>document.getElementById('page1Text').innerText = t.page1Text;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>document.getElementById('page2Title').innerText = t.page2Title;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>document.getElementById('page2Text').innerText = t.page2Text;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>document.getElementById('page3Title').innerText = t.page3Title;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>document.getElementById('page3Text').innerText = t.page3Text;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>document.getElementById('page4Title').innerText = t.page4Title;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>document.getElementById('page4Text').innerText = t.page4Text;</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Aggiorna anche i pulsanti "Torna alla Home" in tutte le pagine</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const homeBtns = document.querySelectorAll('.btn-home');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>homeBtns.forEach(btn =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>btn.innerText = t.homeBtn;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>});</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>document.getElementById('flagBtn').innerText = currentLang === 'it' ? '🇬🇧' : '🇮🇹';</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>function toggleLanguage() {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>currentLang = currentLang === 'it' ? 'en' : 'it';</p>
+<p class="p1"><span class="Apple-converted-space">        </span>updateLanguage();</p>
+<p class="p1"><span class="Apple-converted-space">        </span>localStorage.setItem('lang', currentLang);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>function showPage(pageNum) {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>document.getElementById('homePage').style.display = 'none';</p>
+<p class="p1"><span class="Apple-converted-space">        </span>for(let i = 1; i &lt;= 4; i++) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const page = document.getElementById('page' + i);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>if(page) page.classList.remove('active');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const selectedPage = document.getElementById('page' + pageNum);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>selectedPage.classList.add('active');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>selectedPage.style.display = 'block';</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>function showHome() {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>for(let i = 1; i &lt;= 4; i++) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const page = document.getElementById('page' + i);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>page.classList.remove('active');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>page.style.display = 'none';</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>document.getElementById('homePage').style.display = 'block';</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>// All'avvio</p>
+<p class="p1"><span class="Apple-converted-space">    </span>document.addEventListener('DOMContentLoaded', () =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const savedLang = localStorage.getItem('lang');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>if(savedLang === 'en' || savedLang === 'it') {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>currentLang = savedLang;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>updateLanguage();</p>
+<p class="p1"><span class="Apple-converted-space">        </span>showHome();</p>
+<p class="p1"><span class="Apple-converted-space">    </span>});</p>
+<p class="p1">&lt;/script&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
